@@ -48,7 +48,7 @@ namespace WebApiProduto.Controllers
 
             var retorno = _produtoService.ListarProdutoService();
 
-            return Ok();//ok = injeção tbm
+            return Ok(retorno);//ok = injeção tbm
         }
     }
 }
