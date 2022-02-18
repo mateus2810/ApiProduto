@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiProduto.Middlewares;
 
 namespace WebApiProduto
 {
@@ -31,6 +32,13 @@ namespace WebApiProduto
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiProduto", Version = "v1" });
             });
+
+            ConfigurarMiddlewares(services, Configuration);
+        }
+
+        public void ConfigurarMiddlewares(IServiceCollection services, IConfiguration configuration)
+        {
+            services.AdicionarInjecaoDependencia();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
