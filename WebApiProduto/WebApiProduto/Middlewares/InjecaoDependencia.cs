@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Repository.Interface;
 using Repository.Repository;
+using Services.Interfaces;
+using Services.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,9 @@ namespace WebApiProduto.Middlewares
         public static void AdicionarInjecaoDependencia(this IServiceCollection services)
         {
             services.AddSingleton<IProdutoRepository, ProdutoRepository>();
+
+            services.AddTransient<IProdutoService, ProdutoService>();
+            //services.AddTransient<IOficinasServico, OficinasServico>();
         }
     }
 }

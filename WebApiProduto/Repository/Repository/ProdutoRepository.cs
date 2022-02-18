@@ -1,7 +1,7 @@
 ﻿using Dapper;
+using Domain;
 using Repository.Interface;
 using Repository.Repository.Base;
-using Services.Dto;
 using System;
 using System.Collections.Generic;
 
@@ -9,8 +9,6 @@ namespace Repository.Repository
 {
     public class ProdutoRepository : RepositoryBase<ProdutoDto>, IProdutoRepository
     {
-
-        private readonly IProdutoRepository _produtoRepository;
 
         public IEnumerable<ProdutoDto> ListarProdutoRepository()
         {
@@ -22,8 +20,10 @@ namespace Repository.Repository
 
                 var resultado = _conexao.Query<ProdutoDto>(sql);
 
+                Dispose();
 
-                return _produtoRepository.ListarProdutoRepository(sql);
+
+                return resultado;
             }
             catch (Exception ex)
             {

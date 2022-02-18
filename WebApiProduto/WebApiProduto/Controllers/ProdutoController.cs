@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Domain;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Services.Dto;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -45,7 +45,7 @@ namespace WebApiProduto.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<ProdutoDto>> ListarProduto()
         {
-            return Ok(_produtoService.ListarProduto());//ok = injeção tbm
+            return Ok(_produtoService.ListarProdutoService());//ok = injeção tbm
         }
     }
 }

@@ -311,14 +311,14 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Services/1.0.0": {
+      "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/Services.dll": {}
+          "bin/placeholder/Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Services.dll": {}
+          "bin/placeholder/Domain.dll": {}
         }
       }
     }
@@ -949,19 +949,19 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Services/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
-      "path": "../Services/Services.csproj",
-      "msbuildProject": "../Services/Services.csproj"
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Dapper.Contrib >= 2.0.78",
+      "Domain >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 6.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 6.0.0",
       "Microsoft.Extensions.Configuration.Json >= 6.0.0",
-      "Services >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -998,8 +998,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\Projetos\\ApiProduto\\WebApiProduto\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\Projetos\\ApiProduto\\WebApiProduto\\Services\\Services.csproj"
+            "C:\\Users\\DELL\\Desktop\\Projetos\\ApiProduto\\WebApiProduto\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\Projetos\\ApiProduto\\WebApiProduto\\Domain\\Domain.csproj"
             }
           }
         }

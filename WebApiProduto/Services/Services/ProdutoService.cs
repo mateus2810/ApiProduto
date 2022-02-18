@@ -1,4 +1,6 @@
-﻿using Services.Dto;
+﻿using Domain;
+using Repository.Interface;
+using Services.Dto;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
