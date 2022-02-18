@@ -5,7 +5,6 @@ using Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebApiProduto.Controllers
 {
@@ -23,8 +22,9 @@ namespace WebApiProduto.Controllers
 
         private readonly ILogger<ProdutoController> _logger;
 
-        public ProdutoController(ILogger<ProdutoController> logger)
+        public ProdutoController(IProdutoService produtoService, ILogger<ProdutoController> logger)
         {
+            _produtoService = produtoService;
             _logger = logger;
         }
 
@@ -45,7 +45,10 @@ namespace WebApiProduto.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<ProdutoDto>> ListarProduto()
         {
-            return Ok(_produtoService.ListarProdutoService());//ok = injeção tbm
+
+            var retorno = _produtoService.ListarProdutoService();
+
+            return Ok();//ok = injeção tbm
         }
     }
 }

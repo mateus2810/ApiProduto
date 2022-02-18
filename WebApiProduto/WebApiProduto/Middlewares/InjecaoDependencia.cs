@@ -3,10 +3,6 @@ using Repository.Interface;
 using Repository.Repository;
 using Services.Interfaces;
 using Services.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebApiProduto.Middlewares
 {

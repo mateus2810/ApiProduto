@@ -1,12 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Repository.Base
 {
@@ -36,8 +32,6 @@ namespace Repository.Repository.Base
             if (_conexao.State != ConnectionState.Open)
                 _conexao.Open();
         }
-
-
 
         public void Dispose()
         {

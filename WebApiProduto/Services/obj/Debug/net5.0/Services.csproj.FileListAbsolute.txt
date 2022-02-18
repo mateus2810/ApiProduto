@@ -1,0 +1,17 @@
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Services.deps.json
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Services.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\ref\Services.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Services.pdb
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Domain.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Repository.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Domain.pdb
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\bin\Debug\net5.0\Repository.pdb
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\ref\Services.dll
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\Services\obj\Debug\net5.0\Services.pdb
