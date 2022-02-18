@@ -1,10 +1,9 @@
-﻿using Repository.Interface;
+﻿using Dapper;
+using Repository.Interface;
 using Repository.Repository.Base;
+using Services.Dto;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Repository
 {

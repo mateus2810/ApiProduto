@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Services.Dto;
+using Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +11,19 @@ namespace WebApiProduto.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class ProdutoController : ControllerBase
     {
+
+        private readonly IProdutoService _produtoService;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<ProdutoController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public ProdutoController(ILogger<ProdutoController> logger)
         {
             _logger = logger;
         }
@@ -34,6 +39,13 @@ namespace WebApiProduto.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [Route("ListarProduto")]
+        [HttpGet]
+        public ActionResult<IEnumerable<ProdutoDto>> ListarProduto()
+        {
+            return Ok(_produtoService.ListarProduto());//ok = injeção tbm
         }
     }
 }
