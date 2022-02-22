@@ -10,7 +10,7 @@ namespace Services.Interfaces
     public interface IProdutoService
     {
         IEnumerable<ProdutoDto> ListarProdutoService();
-        ProdutoDto CriarProdutoService();
+        bool CriarProdutoService(ProdutoDto produto);
         ProdutoDto EditarProdutoService();
         ProdutoDto ExcluirProdutoService();
     }

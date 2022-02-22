@@ -53,10 +53,10 @@ namespace WebApiProduto.Controllers
 
         [Route("criar")]
         [HttpPost]
-        public IActionResult CriarProduto()
+        public IActionResult CriarProduto([FromBody] ProdutoDto produto)
         {
 
-            var retorno = _produtoService.CriarProdutoService();
+            var retorno = _produtoService.CriarProdutoService(produto);
 
             return Ok(retorno);
         }

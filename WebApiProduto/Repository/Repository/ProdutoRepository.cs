@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Dapper.Contrib.Extensions;
 using Domain;
 using Repository.Interface;
 using Repository.Repository.Base;
@@ -32,30 +33,32 @@ namespace Repository.Repository
             }
         }
 
-        public ProdutoDto CriarProdutoRepository()
+        public bool CriarProdutoRepository(ProdutoDto produto)
         {
-            return new ProdutoDto();
-            //try
-            //{
-            //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert
+            try
+            {
+                ValidaConexao();
 
-            //    ValidaConexao();
+                var resultado = _conexao.Insert(produto);
+                
+                Dispose();
 
-            //    var resultado = _conexao.Query<ProdutoDto>(sql);
-            //    Dispose();
-
-
-            //    return resultado;
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw new Exception($"ERRO: {ex.Message}");
-            //}
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"ERRO: {ex.Message}");
+            }
         }
 
         public ProdutoDto EditarProdutoRepository()
         {
             return new ProdutoDto();
+            
+            //const string sql = "SELECT * FROM dbo.Madeira ";
+
+
+            //var atualizar = _conexao.Execute(sql);
             //try
             //{
             //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert

@@ -29,11 +29,11 @@ namespace Services.Services
             }
         }
 
-        public ProdutoDto CriarProdutoService()
+        public bool CriarProdutoService(ProdutoDto produto)
         {
             try
             {
-                return _produtoRepository.CriarProdutoRepository();
+                return _produtoRepository.CriarProdutoRepository(produto);
             }
             catch (Exception ex)
             {
