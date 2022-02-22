@@ -16,7 +16,7 @@ namespace Repository.Repository
         {
             try
             {
-                const string sql = "SELECT * FROM dbo.Madeira ";
+                const string sql = "SELECT * FROM dbo.produto ";
 
                 ValidaConexao();
 
