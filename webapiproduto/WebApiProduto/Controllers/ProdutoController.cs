@@ -60,5 +60,25 @@ namespace WebApiProduto.Controllers
 
             return Ok(retorno);
         }
+
+        [Route("editar")]
+        [HttpPost]
+        public IActionResult EditarProduto()
+        {
+
+            var retorno = _produtoService.EditarProdutoService();
+
+            return Ok(retorno);
+        }
+
+        [Route("excluir")]
+        [HttpPost]
+        public IActionResult ExcluirProduto()
+        {
+
+            var retorno = _produtoService.ExcluirProdutoService();
+
+            return Ok(retorno);
+        }
     }
 }
