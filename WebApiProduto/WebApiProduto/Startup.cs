@@ -28,8 +28,7 @@ namespace WebApiProduto
         {
 
             services.AddCors(option => option.AddDefaultPolicy(
-                builder => builder.AllowAnyOrigin()
-                
+                builder => builder.AllowAnyOrigin()               
                 ));
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -50,18 +49,6 @@ namespace WebApiProduto
         {
 
             app.UseCors();
-
-            
-            //var builder = WebApplication.CreateBuilder(args);
-            //builder.Services.AddCors(options =>
-            //{
-            //    options.AddPolicy(name: MyAllowSpecificOrigins,
-            //                      builder =>
-            //                      {
-            //                          builder.WithOrigins("http://example.com",
-            //                                              "http://www.contoso.com");
-            //                      });
-            //});
 
 
             if (env.IsDevelopment())

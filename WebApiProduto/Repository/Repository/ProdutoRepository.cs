@@ -53,6 +53,48 @@ namespace Repository.Repository
             //}
         }
 
+        public ProdutoDto EditarProdutoRepository()
+        {
+            return new ProdutoDto();
+            //try
+            //{
+            //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert
+
+            //    ValidaConexao();
+
+            //    var resultado = _conexao.Query<ProdutoDto>(sql);
+            //    Dispose();
+
+
+            //    return resultado;
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new Exception($"ERRO: {ex.Message}");
+            //}
+        }
+
+        public ProdutoDto ExcluirProdutoRepository()
+        {
+            return new ProdutoDto();
+            //try
+            //{
+            //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert
+
+            //    ValidaConexao();
+
+            //    var resultado = _conexao.Query<ProdutoDto>(sql);
+            //    Dispose();
+
+
+            //    return resultado;
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw new Exception($"ERRO: {ex.Message}");
+            //}
+        }
+
 
 
     }
