@@ -28,5 +28,17 @@ namespace Services.Services
                 throw new Exception($"ERROR: {ex.Message}");//conferir onde colocar exception
             }
         }
+
+        public ProdutoDto CriarProdutoService()
+        {
+            try
+            {
+                return _produtoRepository.CriarProdutoRepository();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"ERROR: {ex.Message}");//conferir onde colocar exception
+            }
+        }
     }
 }

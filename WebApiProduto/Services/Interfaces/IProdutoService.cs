@@ -10,5 +10,6 @@ namespace Services.Interfaces
     public interface IProdutoService
     {
         IEnumerable<ProdutoDto> ListarProdutoService();
+        ProdutoDto CriarProdutoService();
     }
 }

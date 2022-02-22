@@ -10,5 +10,6 @@ namespace Repository.Interface
     public interface  IProdutoRepository
     {
         IEnumerable<ProdutoDto> ListarProdutoRepository();
+        ProdutoDto CriarProdutoRepository();
     }
 }
