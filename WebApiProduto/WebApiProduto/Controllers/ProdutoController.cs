@@ -50,5 +50,15 @@ namespace WebApiProduto.Controllers
 
             return Ok(retorno);//ok = injeção tbm
         }
+
+        [Route("criar")]
+        [HttpPost]
+        public IActionResult CriarProduto()
+        {
+
+            var retorno = _produtoService.CriarProdutoService();
+
+            return Ok(retorno);
+        }
     }
 }
