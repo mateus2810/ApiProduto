@@ -27,6 +27,10 @@ namespace WebApiProduto
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddCors(option => option.AddDefaultPolicy(
+                builder => builder.AllowAnyOrigin()
+                
+                ));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -44,6 +48,22 @@ namespace WebApiProduto
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.UseCors();
+
+            
+            //var builder = WebApplication.CreateBuilder(args);
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddPolicy(name: MyAllowSpecificOrigins,
+            //                      builder =>
+            //                      {
+            //                          builder.WithOrigins("http://example.com",
+            //                                              "http://www.contoso.com");
+            //                      });
+            //});
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

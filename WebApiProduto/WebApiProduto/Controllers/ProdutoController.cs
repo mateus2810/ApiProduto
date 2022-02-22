@@ -41,7 +41,7 @@ namespace WebApiProduto.Controllers
             .ToArray();
         }
 
-        [Route("ListarProduto")]
+        [Route("listar-produto")]
         [HttpGet]
         public ActionResult<IEnumerable<ProdutoDto>> ListarProduto()
         {
