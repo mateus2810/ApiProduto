@@ -11,7 +11,7 @@ namespace Services.Interfaces
     {
         IEnumerable<ProdutoDto> ListarProdutoService();
         bool CriarProdutoService(ProdutoDto produto);
-        ProdutoDto EditarProdutoService();
-        ProdutoDto ExcluirProdutoService();
+        bool EditarProdutoService(ProdutoDto produto);
+        bool ExcluirProdutoService(ProdutoDto produto);
     }
 }

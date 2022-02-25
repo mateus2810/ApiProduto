@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Dapper.Contrib.Extensions;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Services.Interfaces;
@@ -28,20 +29,20 @@ namespace WebApiProduto.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
+        //[HttpGet]
+        //public IEnumerable<WeatherForecast> Get()
+        //{
+        //    var rng = new Random();
+        //    return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        //    {
+        //        Date = DateTime.Now.AddDays(index),
+        //        TemperatureC = rng.Next(-20, 55),
+        //        Summary = Summaries[rng.Next(Summaries.Length)]
+        //    })
+        //    .ToArray();
+        //}
 
-        [Route("listar-produto")]
+        [Route("produto")]
         [HttpGet]
         public ActionResult<IEnumerable<ProdutoDto>> ListarProduto()
         {
@@ -58,27 +59,27 @@ namespace WebApiProduto.Controllers
 
             var retorno = _produtoService.CriarProdutoService(produto);
 
-            return Ok(retorno);
+            return Ok();
         }
 
         [Route("editar")]
         [HttpPost]
-        public IActionResult EditarProduto()
+        public IActionResult EditarProduto([FromBody] ProdutoDto produto)
         {
 
-            var retorno = _produtoService.EditarProdutoService();
+            var retorno = _produtoService.EditarProdutoService(produto);
 
-            return Ok(retorno);
+            return Ok();
         }
 
         [Route("excluir")]
         [HttpPost]
-        public IActionResult ExcluirProduto()
+        public IActionResult ExcluirProduto(ProdutoDto produto)//alterar depois pelo id
         {
 
-            var retorno = _produtoService.ExcluirProdutoService();
+            var retorno = _produtoService.ExcluirProdutoService(produto);
 
-            return Ok(retorno);
+            return Ok();
         }
     }
 }

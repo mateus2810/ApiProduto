@@ -11,7 +11,7 @@ namespace Repository.Interface
     {
         IEnumerable<ProdutoDto> ListarProdutoRepository();
         bool CriarProdutoRepository(ProdutoDto produto);
-        ProdutoDto EditarProdutoRepository();
-        ProdutoDto ExcluirProdutoRepository();
+        bool EditarProdutoRepository(ProdutoDto produto);
+        bool ExcluirProdutoRepository(ProdutoDto produto);
     }
 }

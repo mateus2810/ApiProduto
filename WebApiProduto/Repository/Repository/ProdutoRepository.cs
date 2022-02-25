@@ -51,51 +51,38 @@ namespace Repository.Repository
             }
         }
 
-        public ProdutoDto EditarProdutoRepository()
+        public bool EditarProdutoRepository(ProdutoDto produto)
         {
-            return new ProdutoDto();
-            
-            //const string sql = "SELECT * FROM dbo.Madeira ";
+            try
+            {
+                ValidaConexao();
 
+                var resultado = _conexao.Update(produto).Equals(produto.Nome);//alterar para id
+                Dispose();
 
-            //var atualizar = _conexao.Execute(sql);
-            //try
-            //{
-            //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert
-
-            //    ValidaConexao();
-
-            //    var resultado = _conexao.Query<ProdutoDto>(sql);
-            //    Dispose();
-
-
-            //    return resultado;
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw new Exception($"ERRO: {ex.Message}");
-            //}
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"ERRO: {ex.Message}");
+            }
         }
 
-        public ProdutoDto ExcluirProdutoRepository()
+        public bool ExcluirProdutoRepository(ProdutoDto produto)
         {
-            return new ProdutoDto();
-            //try
-            //{
-            //    const string sql = "SELECT * FROM dbo.Madeira ";//colocar insert
+            try
+            {
+                ValidaConexao();
 
-            //    ValidaConexao();
+                var resultado = _conexao.Delete(produto).Equals(produto.Nome);//alterar depois pelo id
+                Dispose();
 
-            //    var resultado = _conexao.Query<ProdutoDto>(sql);
-            //    Dispose();
-
-
-            //    return resultado;
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw new Exception($"ERRO: {ex.Message}");
-            //}
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"ERRO: {ex.Message}");
+            }
         }
 
 

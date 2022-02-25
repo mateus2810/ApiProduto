@@ -41,11 +41,11 @@ namespace Services.Services
             }
         }
 
-        public ProdutoDto EditarProdutoService()
+        public bool EditarProdutoService( ProdutoDto produto)
         {
             try
             {
-                return _produtoRepository.EditarProdutoRepository();
+                return _produtoRepository.EditarProdutoRepository(produto);
             }
             catch (Exception ex)
             {
@@ -53,11 +53,11 @@ namespace Services.Services
             }
         }
 
-        public ProdutoDto ExcluirProdutoService()
+        public bool ExcluirProdutoService(ProdutoDto produto)
         {
             try
             {
-                return _produtoRepository.ExcluirProdutoRepository();
+                return _produtoRepository.ExcluirProdutoRepository(produto);
             }
             catch (Exception ex)
             {

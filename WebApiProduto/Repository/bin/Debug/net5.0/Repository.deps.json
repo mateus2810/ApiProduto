@@ -241,6 +241,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Dapper.Contrib": "2.0.78"
+        },
         "runtime": {
           "Domain.dll": {}
         }

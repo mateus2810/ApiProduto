@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "chJw5q3s2GjYLKjd8EttCdLvEz1/e/SukRgqtlCFozA9Ok8Z7Z1cNSzwAyF3uGhoTGhPmMNOa5fFQ3F+jpQbSg==",
+  "dgSpecHash": "X9Sx0/nC/8fKCidtAuug94qVNsHTkiUFz0V3Mre2zcFJBHfZdAoxTjZ5ab2b3ZeR6UZCaikgAE3Nbm5jdFUEUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\Desktop\\Projetos\\ApiProduto\\WebApiProduto\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512"
+  ],
   "logs": []
 }

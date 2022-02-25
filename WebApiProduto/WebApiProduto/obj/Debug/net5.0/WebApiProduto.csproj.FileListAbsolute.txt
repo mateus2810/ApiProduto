@@ -51,3 +51,4 @@ C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\WebApiProduto\obj\Debug\
 C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\WebApiProduto\obj\Debug\net5.0\ref\WebApiProduto.dll
 C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\WebApiProduto\obj\Debug\net5.0\WebApiProduto.pdb
 C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\WebApiProduto\obj\Debug\net5.0\WebApiProduto.genruntimeconfig.cache
+C:\Users\DELL\Desktop\Projetos\ApiProduto\WebApiProduto\WebApiProduto\obj\Debug\net5.0\WebApiProduto.MvcApplicationPartsAssemblyInfo.cs

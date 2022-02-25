@@ -314,6 +314,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Dapper.Contrib": "2.0.78"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
